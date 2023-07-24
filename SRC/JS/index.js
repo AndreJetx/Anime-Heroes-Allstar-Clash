@@ -23,6 +23,10 @@ personagens.forEach((personagem) => {
        
         personagem.classList.add('selecionado');
 
+        if (personagemSelecionado === personagem) {
+          return; 
+        }
+
         if (personagemSelecionado) {
           personagemSelecionado.classList.remove('selecionado');
         }
