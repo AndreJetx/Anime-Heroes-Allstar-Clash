@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Anime Heroes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/estilos-dbz.css">
+    <link rel="stylesheet" href="./SRC/CSS/responsivo.css">
+   
+
+</head>
+<body>
+
+    <header class="cabecalho">
+              
+            <img class="logo" src="./SRC/IMG/logo.png" alt="logo">
+            <img class="logo-anime" src="./SRC/IMG/fundo-dbz2.png" alt="Logo Anime Selecionado">   
+            
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <H1 class="titulo"> Selecione seu personagem </H1>
+            <ul class="lista-de-personagem">
+
+                <li class="personagem" id="goku" data-name ="Goku" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-goku.png" alt="Personagem Goku" onclick="trocarPersonagem('goku', 'bardok')">
+                </li>
+               
+                <li class="personagem" id="bardok" data-name ="Bardok" data-description="Ludar de curta distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-bardok.png" alt="Personagem Bardok" onclick="trocarPersonagem('bardok', 'goku')">
+                </li>
+
+                <li class="personagem" id="vegeta" data-name ="Vegeta" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-vegeta.png" alt="Personagem Vegeta" onclick="trocarPersonagem('vegeta', 'vegetascouter')">
+                </li>
+
+                <li class="personagem" id="vegetascouter" data-name ="Vegeta Scouter" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-vegetascouter.png" alt="Personagem Vegeta Scouter" onclick="trocarPersonagem('vegetascouter', 'vegeta')">
+                </li>
+
+                <li class="personagem" id="vegetto" data-name ="Vegetto" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-vegetto.png" alt="Personagem Vegetto" onclick="trocarPersonagem('vegetto', 'gogeta')">
+                </li>
+                  
+                <li class="personagem" id="gogeta" data-name ="Gogeta" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-gogeta.png" alt="Personagem gogeta" onclick="trocarPersonagem('gogeta', 'vegetto')">
+                </li>
+
+                <li class="personagem" id="trunks" data-name ="Trunks" data-description="Espadachim, Curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-trunks.png" alt="Personagem Trunks" onclick="trocarPersonagem('trunks', 'tapion')">
+                </li>
+
+                <li class="personagem" id="tapion" data-name ="Tapion" data-description="Espadachim, Curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-tapion.png" alt="Personagem Tapion" onclick="trocarPersonagem('tapion', 'trunks')">
+                </li>
+
+                <li class="personagem" id="gohan" data-name ="Gohan" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-gohan.png" alt="Personagem Gohan" onclick="trocarPersonagem('gohan', 'gohanteen')">
+                </li>
+
+                <li class="personagem" id="gohanteen" data-name ="Gohan Adolecente" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-gohanteen.png" alt="Personagem Gohan Teen" onclick="trocarPersonagem('gohanteen', 'gohan')">
+                </li>
+
+                <li class="personagem" id="piccolo" data-name ="Piccolo" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-piccolo.png" alt="Personagem Piccolo" onclick="trocarPersonagem('piccolo', 'piccolodaimaoh')">
+                </li>
+
+                <li class="personagem" id="piccolodaimaoh" data-name ="Piccolo Daimaoh" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-piccolodaimaoh.png" alt="Personagem Piccolo Daimaoh" onclick="trocarPersonagem('piccolodaimaoh', 'piccolo')">
+                </li>
+
+                <li class="personagem" id="yancha" data-name ="Yancha" data-description="Lutador corpo-a-corpo">
+                    <img  class="tamanho-personagem unico" src="./SRC/IMG/card-yancha.png" alt="Personagem Yancha">
+                </li>
+
+                <li class="personagem" id="kale" data-name ="Kale" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-kale.png" alt="Personagem Kale" onclick="trocarPersonagem('kale', 'kefla')">
+                </li>
+
+                <li class="personagem" id="kefla" data-name ="Kefla" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-kefla.png" alt="Personagem Kefla" onclick="trocarPersonagem('kefla', 'kale')">
+                </li>
+
+                <li class="personagem" id="freeza" data-name ="Freeza" data-description="Lutador de curta e longa distancia">
+                    <img  class="tamanho-personagem secundario"src="./SRC/IMG/card-freeza.png" alt="Personagem freeza" onclick="trocarPersonagem('freeza', 'cooler')">
+                </li>
+
+                <li class="personagem" id="cooler" data-name ="Coller" data-description="Lutador corpo-a-corpo, com tecnicas a distancia" style="display: none;">
+                    <img  class="tamanho-personagem secundario"src="./SRC/IMG/card-cooler.png" alt="Personagem Cooler" onclick="trocarPersonagem('cooler', 'freeza')">
+                </li>
+
+                <li class="personagem" id="cell" data-name ="Cell" data-description="Lutador de curta e media distancia">
+                    <img  class="tamanho-personagem unico" src="./SRC/IMG/card-cell.png" alt="Personagem Cell">
+                </li>
+
+                <li class="personagem" id="kidboo" data-name ="KidBoo" data-description="Lutador de curta e longa distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-kidboo.png" alt="Personagem KidBoo" alt="Personagem Goku" onclick="trocarPersonagem('kidboo', 'androide21')">
+                </li>
+
+                <li class="personagem" id="androide21" data-name ="Androide 21" data-description="Lutador de media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-androide21.png" alt="Personagem Androide 21" onclick="trocarPersonagem('androide21', 'kidboo')">
+                </li>
+
+                <li class="personagem" id="hit" data-name ="Hit" data-description="Lutador corpo-a-corpo, com tecnicas a distancia">
+                    <img class="tamanho-personagem unico" src="./SRC/IMG/card-hit.png" alt="Personagem Hit">
+                </li>
+
+                <li class="personagem" id="zamassu" data-name ="Zamassu" data-description="Lutador de curta e media distancia">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-zamassu.png" alt="Personagem Zamasso" onclick="trocarPersonagem('zamassu', 'gokublack')">
+                </li>
+
+                <li class="personagem" id="gokublack" data-name ="Goku Black" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-gokublack.png" alt="Personagem Goku Black" onclick="trocarPersonagem('gokublack', 'zamassufused')">
+                </li>
+
+                <li class="personagem" id="zamassufused" data-name ="Zamassu Fused" data-description="Lutador de curta e media distancia" style="display: none;">
+                    <img class="tamanho-personagem secundario" src="./SRC/IMG/card-zamassufused.png" alt="Personagem Zamassu Fused" onclick="trocarPersonagem('zamassufused', 'zamassu')">
+                </li>
+
+                <li class="personagem" id="toppo" data-name ="Toppo" data-description="Lutador corpo-a-corpo com tecnicas a distancia">
+                    <img class="tamanho-personagem unico" src="./SRC/IMG/card-toppo.png" alt="Personagem Toppo">
+                </li>
+
+                <li class="personagem" id="jiren" data-name ="Jiren" data-description="Lutador corpo-a-corpo com tecnicas a distancia">
+                    <img class="tamanho-personagem unico" src="./SRC/IMG/card-jiren.png" alt="Personagem Jiren">
+                </li>
+
+                <li class="personagem" id="cumber" data-name ="Cumber" data-description="Lutador corpo-a-corpo com tecnicas a distancia">
+                    <img class="tamanho-personagem unico" src="./SRC/IMG/card-cumber.png" alt="Personagem Cumber">
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./SRC/IMG/gif-dbz/card-goku.gif" alt="Personagem Selecionado">
+            
+            <div class="informacao-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Goku</h2>
+                <p class="descricao-personagem" id="descricao-personagem"></p>
+            </div>
+        </section>
+    </main>
+    <script src="./SRC/JS/index.js"></script>
+</body>
+</html>
