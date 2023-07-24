@@ -30,7 +30,7 @@ personagens.forEach((personagem) => {
       const imagemPersonagemGrande = document.querySelector('.personagem-grande');
             
             const idPersonagem = personagem.attributes.id.value
-            imagemPersonagemGrande.src = `./src/img/gif-dbz/card-${idPersonagem}.gif`; 	
+            imagemPersonagemGrande.src = `/src/img/gif-dbz/card-${idPersonagem}.gif`; 	
 
             const nomePesonagem = document.getElementById('nome-personagem');
             nomePesonagem.innerText = personagem.getAttribute('data-name');
